@@ -1,8 +1,25 @@
-<html>
+<html ng-app="app6">
+<head>
+<link rel="stylesheet" href="styles.css"></link>
+</head>
 	<body>
 		<h1>app6 - routing</h1>
+		<nav>
+		<button ui-sref="home">Home</button>
+		<button ui-sref="details">Details</button>
+		<button ui-sref="signup">Sign Up</button>
+		</nav>
+
+		<ui-view></ui-view>
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 		<script src="app.js"></script>
+
+		<script src="./details/detailsCtrl.js"></script>
+		<script src="./home/homeCtrl.js"></script>
+		<script src="./signup/signupCtrl.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
 	</body>
